@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PONTZ</title>
+<style>
+body { text-align: center; font-family: Arial, sans-serif; margin: 50px; }
+.box { font-size: 24px; padding: 20px; border: 2px solid black; display: inline-block; }
+</style>
+</head>
+<body>
+
+<div class="box">PONTZ</div>
+<h2 id="countdown">60</h2>
+
+
+<!-- Adding images -->
+
+
+<div class="image-container">
+<img src="images/image5.jpg" alt="PUNTZ">
+</div>
+
+
+<script>
+let time = 60;
+function countdown() {
+if (time > 0) {
+time--;
+document.getElementById("countdown").textContent = time;
+setTimeout(countdown, 1000);
+} else {
+window.location.href = "page7.html";
+}
+}
+countdown();
+</script>
+
+</body>
+</html>
